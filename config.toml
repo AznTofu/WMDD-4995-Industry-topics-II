@@ -1,0 +1,170 @@
+baseurl = "http://www.madefordesign.com/"
+languageCode = "en-us"
+title = "Made For Design"
+theme = "hugo-strata-theme"
+disqusShortname = "spf13"
+# Enable Google Analytics by inserting your tracking code
+googleAnalytics = ""
+# Define how many posts should appear on a site
+paginate = 10
+
+[params]
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Your name"
+	description = "Describe your website"
+
+	# Format dates with Go's time formatting
+	date_format = "2006-01-02"
+
+	# Add read time estimates in the format "X min read"
+	show_read_time = false
+
+	# Add custom assets with their paths relative to the static folder
+	custom_js   = []
+	custom_css  = ["style.css"]
+
+
+	[params.sidebar]
+		# Replace the avatar with a picture of your own under static/images
+		avatar = "Made.png"
+		# Use Markdown to format the string. This works nearly all over the theme
+		bio = "**Made for Design**<br> graphic design <br>and front end coding<br> that speak to your needs"
+		# The icons will be shown if you enter your username
+		twitter = ""
+		github = ""
+		gitlab = ""
+		dribbble = ""
+		facebook = ""
+		googleplus = ""
+		flickr = ""
+		linkedin = ""
+
+		copyright = [
+			"&copy; John Doe",
+			"Design: [HTML5 UP](//html5up.net)",
+			"Demo Images: [Unsplash](//unsplash.com/)"
+		]
+
+
+	[params.about]
+		hide  = true
+		title = "Made for Design "
+		content = "Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia."
+
+	[params.portfolio]
+		hide  = false
+		title = "Portfolio"
+
+		# The images and thumbnails are stored under static/images
+		# Create and change subfolders as you like
+		[[params.portfolio.gallery]]
+			image = "p.images/1.jpg"
+			thumb = "p.images/1.jpg"
+			title = "Branding"
+			description = "Coffee brand, logo design on Cup"
+
+		[[params.portfolio.gallery]]
+			image = "p.images/2.jpg"
+			thumb = "p.images/2.jpg"
+			title = "Branding"
+			description = "Coffee brand, logo design on Satchel"
+
+		[[params.portfolio.gallery]]
+			image = "p.images/3.jpg"
+			thumb = "p.images/3.jpg"
+			title = "Branding"
+			description = "Food and Beverage logo design with slogan"
+
+		[[params.portfolio.gallery]]
+			image = "p.images/5.jpg"
+			thumb = "p.images/5.jpg"
+			title = "Website Design"
+			description = "Responsive Home and Living Ecommerce site"
+
+		[[params.portfolio.gallery]]
+			image = "p.images/6.jpg"
+			thumb = "p.images/6.jpg"
+			title = "Website Design"
+			description = "Responsive online publications site"
+
+		[[params.portfolio.gallery]]
+			image = "p.images/11.jpg"
+			thumb = "p.images/11.jpg"
+			title = "Website Design"
+			description = "Red Dot Music Festival, responsive Wordpress site"
+
+		[[params.portfolio.gallery]]
+			image = "p.images/7.jpg"
+			thumb = "p.images/7.jpg"
+			title = "Mobile App Design"
+			description = "Howler: Personal Safety App"
+			
+		[[params.portfolio.gallery]]
+			image = "p.images/8.jpg"
+			thumb = "p.images/8.jpg"
+			title = "Mobile App Design"
+			description = "Howler: Personal Safety App"
+			
+		[[params.portfolio.gallery]]
+			image = "p.images/10.jpg"
+			thumb = "p.images/10.jpg"
+			title = "Mobile App Design"
+			description = "Peal: Meal Planning App"
+			
+		[[params.portfolio.gallery]]
+			image = "p.images/9.jpg"
+			thumb = "p.images/9.jpg"
+			title = "Mobile App Design"
+			description = "Peal: Meal Planning App"				
+
+	[params.recentposts]
+		hide  = false
+		title = "Recent blog posts"
+
+	[params.contact]
+		hide  = false
+		title = "Get In Touch"
+		content = "If you are looking for a graphic designer with front end coding experiences please feel free to contact me."
+
+		# This can be exact coordinates or a searchable address in google maps
+		gmaps_address = "39.7889055,-120.5443524"
+		address = [
+			"1395 W 14th Ave",
+			"Vancouver, V6K1R2",
+			"Canada"
+		]
+		phone = "(778) 953-3406"
+
+		# Since this template is static, the contact form uses www.formspree.io as a
+		# proxy. The form makes a POST request to their servers to send the actual
+		# email. Visitors can send up to a 1000 emails each month for free.
+	    #
+	    # What you need to do for the setup?
+	    #
+	    # - set your email address under 'email' below
+	    # - upload the generated site to your server
+	    # - send a dummy email yourself to confirm your account
+	    # - click the confirm link in the email from www.formspree.io
+	    # - you're done. Happy mailing!
+		email = "yuli.denise@gmail.com"
+
+		[params.contact.form]
+			# Set custom strings for the form if your native
+			# language isn't English
+			name = "Name"
+			email = "Email"
+			message = "Message"
+			submit = "Send message"
+
+
+# Menu links that appear on the left sidebar
+[[menu.main]]
+	name = "Home"
+	url  = "/"
+	weight = 10
+
+[[menu.main]]
+	name = "Blog"
+	url  = "post/"
+	weight = 0
